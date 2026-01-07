@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Recipe Results</title>
+    <p style="font-size:14px;color:#666;margin-bottom:20px;">
+        Meal type is shown as a recommendation based on the recipe.
+    </p>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h2 class="results-title">Recipes based on your ingredients</h2>
+    <div id="loader" class="loader hidden">
+       <div class="spinner"></div>
+         <p>Finding delicious recipes...</p>
+    </div>
+
+
+    <div class="results-container">
+        <div id="resultsContainer" class="results-grid"></div>
+    </div>
+
+    <script src="js/results.js"></script>
+</body>
+</html>

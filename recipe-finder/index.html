@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>🍳 Recipe Finder</h1>
+        <p>Find recipes using ingredients you already have</p>
+    </header>
+
+    
+
+    <!-- Search Form -->
+    <form id="searchForm">
+
+        <!-- Search Bar -->
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+
+            <div id="ingredientContainer">
+                <input
+                    type="text"
+                    id="ingredientInput"
+                    placeholder="Enter ingredients (comma separated)"
+                >
+            </div>
+
+            <!-- Clear Button inside search bar -->
+            <span id="clearBtn" class="clear-icon">✖</span>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters">
+
+            <!-- Meal Type -->
+            <div class="filter-group">
+                <h3>Meal Type</h3>
+                <label><input type="checkbox" value="Breakfast"> Breakfast</label>
+                <label><input type="checkbox" value="Lunch"> Lunch</label>
+                <label><input type="checkbox" value="Dinner"> Dinner</label>
+                <label><input type="checkbox" value="Snack"> Snack / Side</label>
+                <label><input type="checkbox" value="Dessert"> Dessert</label>
+            </div>
+
+            <!-- Time -->
+            <div class="filter-group">
+                <h3>Cooking Time</h3>
+                <label><input type="checkbox" value="15"> 15 mins or less</label>
+                <label><input type="checkbox" value="30"> 30 mins</label>
+                <label><input type="checkbox" value="45"> 45 mins</label>
+            </div>
+
+        </div>
+
+        <!-- Search Button -->
+        <button type="submit" class="search-btn">
+            🔎 Search Recipes
+        </button>
+
+    </form>
+
+    <script src="js/search.js"></script>
+</body>
+</html>

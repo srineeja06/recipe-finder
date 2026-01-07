@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Recipe Details</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="recipe-page">
+
+    <!-- HERO SECTION -->
+    <div class="recipe-hero">
+        <div class="hero-text">
+            <span class="tag">Recipe</span>
+            <h1 id="recipeTitle"></h1>
+
+            <div class="meta">
+                <span>🍽 <span id="recipeMeal"></span></span>
+               
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img id="recipeImage" alt="Recipe Image">
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="recipe-content">
+
+        <!-- STEPS -->
+        <div class="steps">
+            <h2>Steps</h2>
+            <ol id="recipeSteps"></ol>
+        </div>
+
+        <!-- INGREDIENTS -->
+        <div class="ingredients-box">
+            <h2>Ingredients</h2>
+            <ul id="ingredientList"></ul>
+        </div>
+
+    </div>
+
+    <!-- RELATED -->
+    <h2 class="section-title">Related Recipes</h2>
+    <div id="relatedRecipes" class="related-grid"></div>
+
+</div>
+
+<script src="js/recipe.js"></script>
+</body>
+</html>
